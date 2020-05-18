@@ -1,11 +1,8 @@
 import * as React from "react"
+import RootComponent from "./Root"
 
 const App: React.FC<{}> = () => {
-    return (
-        <>
-          <h4>Hello, World!</h4>
-        </>
-    )
+    return <RootComponent />
 }
 
 export default App
