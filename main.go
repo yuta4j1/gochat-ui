@@ -15,12 +15,14 @@ func main() {
 	}
 	window.WindowOptions.Width = 1200
 	window.WindowOptions.Height = 980
-	window.WindowOptions.Title = "Gotron"
+	window.WindowOptions.Title = "gochat"
 
 	done, err := window.Start()
 	if err != nil {
 		panic(err)
 	}
+
+	window.OpenDevTools()
 
 	<-done
 }
